@@ -4,6 +4,7 @@
   "description": "Some scraps of async techniques in JS",
   "main": "index.js",
   "scripts": {
+    "babel-async": "babel-node --presets es2015 --plugins syntax-async-functions,transform-regenerator",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/tdumitrescu/js-async-demos/issues"
   },
-  "homepage": "https://github.com/tdumitrescu/js-async-demos#readme"
+  "homepage": "https://github.com/tdumitrescu/js-async-demos#readme",
+  "dependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "node-fetch": "^1.6.0"
+  }
 }
