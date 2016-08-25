@@ -3,7 +3,7 @@
 function* evenGenerator() {
   let cur = 0;
   while (true) {
-    cur = yield cur = cur + 2;
+    yield cur = cur + 2;
   }
 }
 
