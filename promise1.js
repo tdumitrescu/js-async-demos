@@ -5,14 +5,7 @@ const delayedDouble = (val, cb) => {
   setTimeout(() => cb(val * 2), delayMS);
 };
 
-let totalLogged = 0;
-
-const logValue = val => {
-  console.log(val);
-  if (++totalLogged === 3) {
-    console.log('done!');
-  }
-};
+const logValue = val => console.log(val);
 
 const dd = val => new Promise((resolve, reject) => {
   delayedDouble(val, resolve);
@@ -20,4 +13,5 @@ const dd = val => new Promise((resolve, reject) => {
 
 dd(1).then(logValue)
   .then(() => dd(2)).then(logValue)
-  .then(() => dd(3)).then(logValue);
+  .then(() => dd(3)).then(logValue)
+  .then(() => console.log('done!'));
