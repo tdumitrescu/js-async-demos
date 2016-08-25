@@ -1,0 +1,26 @@
+{
+  "name": "js-async-demos",
+  "version": "1.0.0",
+  "description": "Some scraps of async techniques in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tdumitrescu/js-async-demos.git"
+  },
+  "keywords": [
+    "callback",
+    "promise",
+    "generator",
+    "async",
+    "await"
+  ],
+  "author": "Ted Dumitrescu <webdev@cmme.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdumitrescu/js-async-demos/issues"
+  },
+  "homepage": "https://github.com/tdumitrescu/js-async-demos#readme"
+}
