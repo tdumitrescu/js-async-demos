@@ -1,3 +1,9 @@
+/**
+ * Callbacks: parallel
+ * Launches 3 asynchronous actions simultaneously
+ * and outputs as each finishes.
+ */
+
 'use strict';
 
 const delayedDouble = (val, cb) => {

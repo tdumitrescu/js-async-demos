@@ -1,3 +1,11 @@
+/**
+ * Callbacks: serial
+ * Launches each asynchronous action only
+ * when the previous action has completed.
+ *
+ * Pyramid of Doom
+ */
+
 'use strict';
 
 const delayedDouble = (val, cb) => {
