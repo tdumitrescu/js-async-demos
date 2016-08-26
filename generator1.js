@@ -1,3 +1,9 @@
+/**
+ * Generators: synchronous iterator
+ * An evenGenerator() produces an infinite
+ * stream of even numbers.
+ */
+
 'use strict';
 
 function* evenGenerator() {

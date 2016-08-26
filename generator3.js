@@ -1,3 +1,13 @@
+/**
+ * Generators: asynchronous usage
+ * Each value passed to 'yield' in sequentialDelays()
+ * tells run() / randomDelay() the maximum number of MS
+ * to wait before continuing on. The result is that
+ * the code of sequentialDelays() reads synchronously
+ * while it's actually waiting on callback-based
+ * asynchronous code.
+ */
+
 'use strict';
 
 function* sequentialDelays() {
