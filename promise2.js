@@ -1,3 +1,10 @@
+/**
+ * Promises: parallel with completion
+ * Launches 3 asynchronous actions simultaneously
+ * and outputs as each finishes, then adds
+ * output as soon as all 3 have completed.
+ */
+
 'use strict';
 
 const delayedDouble = (val, cb) => {

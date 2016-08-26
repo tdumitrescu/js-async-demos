@@ -1,3 +1,12 @@
+/**
+ * Promises: mixing synchronous and asynchronous
+ * Passing the command line argument 'immediate'
+ * causes the program to output 'immediate' right
+ * away. Otherwise the program outputs 'delayed'
+ * after 2s. Demonstrates returning normal values
+ * or Promises in a single Promise chain.
+ */
+
 'use strict';
 
 let result;

@@ -1,3 +1,9 @@
+/**
+ * Promises: serial
+ * Launches each asynchronous action only
+ * when the previous action has completed.
+ */
+
 'use strict';
 
 const delayedDouble = (val, cb) => {
