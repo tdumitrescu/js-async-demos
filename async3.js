@@ -20,6 +20,10 @@ const delayedDouble = val => new Promise((resolve, reject) => {
   console.log('done!');
 
   // parallel, output as results return
-  await Promise.all([1, 2, 3].map(v => delayedDouble(v).then(dv => console.log(dv))));
+  await Promise.all([1, 2, 3].map(async val => {
+    let delay = delayedDouble(val);
+    console.log(await delay);
+    return delay;
+  }));
   console.log('done!');
 })();
