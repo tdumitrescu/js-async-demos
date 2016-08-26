@@ -1,3 +1,12 @@
+/**
+ * Callbacks: parallel two ways
+ * Launches 3 asynchronous actions simultaneously.
+ * The first version simply waits for all results
+ * and then outputs them simultaneously.
+ * The second version outputs as each result comes
+ * in.
+ */
+
 'use strict';
 
 const delayedDouble = val => new Promise((resolve, reject) => {

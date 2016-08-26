@@ -1,3 +1,11 @@
+/**
+ * Async functions: serial
+ * Launches each asynchronous action only
+ * when the previous action has completed.
+ *
+ * Look ma, no pyramid
+ */
+
 'use strict';
 
 const delayedDouble = val => new Promise((resolve, reject) => {
