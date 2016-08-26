@@ -6,7 +6,6 @@ const delayedDouble = (val, cb) => {
 };
 
 let totalLogged = 0;
-
 const logValue = val => {
   console.log(val);
   if (++totalLogged === 3) {
@@ -16,14 +15,10 @@ const logValue = val => {
 
 delayedDouble(1, v1 => {
   logValue(v1);
-
   delayedDouble(2, v2 => {
     logValue(v2);
-
     delayedDouble(3, v3 => {
       logValue(v3);
     });
-
   });
-
 });
